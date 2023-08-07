@@ -12,12 +12,13 @@ nnoremap ha :Ack <cword><cr>
 nnoremap zz zA
 nnoremap r zR
 nnoremap <C-Q> <C-W>q<CR>
-nnoremap tt :CtrlP<CR>
+" nnoremap tt :CtrlP<CR>
+nnoremap tt :NERDTreeToggle<CR>
 nnoremap ff :FZF<CR>
 nnoremap hh :History<CR>
 nnoremap ga :Ag <C-R><C-W><CR>
 nnoremap cc :TComment<CR>
-nnoremap gt :!ctags --python-kinds=i -R .<CR>
+" nnoremap gt :!ctags --python-kinds=i -R .<CR>
 
 call plug#begin()
 Plug 'universal-ctags/ctags'
@@ -28,7 +29,8 @@ Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'valloric/youcompleteme'
 Plug 'mileszs/ack.vim'
-Plug 'ctrlpvim/ctrlp.vim'
+Plug 'chaoren/vim-wordmotion'
+" Plug 'ctrlpvim/ctrlp.vim'
 Plug 'trusktr/seti.vim'
 Plug 'othree/html5.vim'
 Plug 'pangloss/vim-javascript'
@@ -38,6 +40,9 @@ Plug 'itchyny/lightline.vim'
 Plug 'cormacrelf/vim-colors-github'
 Plug 'vim-python/python-syntax'
 Plug 'solarnz/thrift.vim'
+Plug 'ruanyl/vim-gh-line'
+Plug 'georgexsh/ya-git-ctags'
+Plug 'preservim/nerdtree'
 call plug#end()
 
 
